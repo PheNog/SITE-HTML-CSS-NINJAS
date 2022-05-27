@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/estilo.css">
+    <script src="https://kit.fontawesome.com/54002b2b7b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>.:: Ninja's Burger ::.</title>
+</head>
+<body>
+    <header>
+        <div class="img">
+            <img src="assets/img/LogoCompletoBranco-2.png" width="200" height="300" alt="logoninjas">
+        </div>
+        <div>
+            <ul>
+            <li id="cardapio">
+                 <a target="_blank" href="https://cardapiodigital.io/ninjasburger"> Cardápio</a>
+            </li>
+            <li id="insta">
+                 <a target="_blank" href="https://instagram.com/ninjasburger"> Instagram</a> 
+
+            </li>
+            <li>
+               <a target="_blank" href="https://facebook.com/ninjasburger"> Facebook</a> 
+            </li>
+        </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>O MELHOR HAMBURGUER!</h1>
+                <h5>Smashs e tradicionais, tematico no universo Naruto!</h5>
+            </div>
+            <div  onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-up"></i>
+            </div>
+            <div style="display: none" id="about" class="flex">
+               <div>
+                   <img src="assets/img/tsunade.png">
+                  <p>O SENNIN LENDARIO!</p>
+                  <p>Tsunade Double Cheese Catupiry...</p>  
+               </div>
+               <div>
+                   <img src="assets/img/boruto.png">
+        
+                  <p>Os melhores ingredientes, totalmente personalizado!</p> 
+               </div>
+            </div>
+            <div class="form">
+                Deixe seu contato!
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email! :)">
+                    <button id="enviar">Enviar!</button>
+                </form>
+            </div>
+            <div style="display:flex" class="flex2">
+            <div>
+                   <footer>
+            © Desenvolvido por Phelipe Nogueira.
+           
+            </footer>
+            </div>
+             
+             <div> 
+            <img src="assets/img/hiring.jpg">
+            <img src="assets/img/gama.png">
+            </div>
+            </div> 
+    
+        </section>
+    </main>
+    
+    
+    <script>
+        function displayabout(){
+            let arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate');
+            let display1 = document.getElementById('about')
+            display1.classList.toggle('active');
+            
+    
+        }
+            
+      
+    </script>
+</body>
+</html>

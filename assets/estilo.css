@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+    /* text-shadow: 0 0 10px rgb(226, 10, 10); */
+    
+}
+.container{
+    text-align: center;
+    
+}
+.img{
+    align-items: center;
+}
+.img img{
+    max-width:50%;
+    max-height:45%;
+    min-width: 180px;
+    min-height: 100px;
+    width: auto;
+    height: auto;
+    margin: auto
+    
+}
+footer{
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+ul{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    list-style: none;
+    max-width: 100%;
+    
+}
+
+body{
+    background: url(./img/BG.png) no-repeat center center fixed; 
+    background-size: cover;
+ 
+
+
+}
+header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px rgb(245, 12, 12);
+    border-bottom: 4px ridge white; 
+    margin-bottom: 30px;
+    max-width: 100%;
+    
+    
+}
+
+header ul li{
+    padding: 10px;
+    border-left: 2px solid white;
+
+}
+header ul li a:hover{
+    color: rgb(238, 14, 14);
+    background-color: rgba(11, 12, 12, 0.329);
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+.flex{ 
+display: flex;
+align-items: stretch;
+/*grid-template-rows: 1fr, 2fr;
+grid-template-columns: 1fr, 2fr;
+gap: 15px;
+row-gap: 30px; */
+margin: 0 auto;
+
+
+
+}
+.ph{
+    /* grid-row: 1;
+    grid-column: 2;  */
+}
+.flex2{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.flex2 img{
+    max-width: 50px;
+    margin:0 auto;
+}
+.flex2 div{
+
+    margin: 0 auto;
+}
+.flex p{
+    color: rgb(248, 242, 242);
+    font-size: 15px;
+    max-width: 600px;
+}
+.flex div{
+ 
+    background-color: rgba(56, 56, 55, 0.363);
+    max-width: 600px;
+    border: 1px solid rgb(14, 12, 12);
+    margin: 0 auto;
+    
+}
+.flex img{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container .name h1{
+    font-size: 40px;
+    margin: 0 auto;
+    max-width: 600px;
+    font-weight: 600;
+ 
+}
+.container .name h5{
+    font-size: 20px;
+    
+}
+#about p{
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+.form{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.form input{
+width: 50%;
+padding: 5px 10px;
+border:none;
+border-radius: 5px 0px 0px 5px;
+}
+.form button{
+    width: 20%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, rgb(25, 26, 25) 50%, rgb(245, 9, 9) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: rgb(230, 219, 219);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition:all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+.form button:hover{
+    background-position: left bottom;
+    color: rgb(231, 15, 15);
+    transition: 400ms;
+}
+#arrow{
+    font-size: 55px;
+    cursor: pointer;
+
+}
+@keyframes blink{
+    to {
+         visibility: hidden;
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+#animation{
+    transition: 300ms;
+    animation: blink 1s steps(5,start) infinite;
+}
+.active{
+    display: flex !important;
+    transition: 300ms;
+}
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    ul {
+        font-size: 18px;
+
+    }
+    .form{
+        width: 100%;
+    }
+    .flex2{
+        font-size: 12px;
+
+    }
+    .flex2 img{
+        max-width: 35px;
+    }
+}
